@@ -87,8 +87,8 @@
         bio: "I am Fitsum Helina, a developer and president of my university club, currently studying software engineering. Alongside my coursework, I work on numerous real-world side projects.",
         skills:
             {
-                proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
-                exposedTo: ['nodejs', 'python', 'adobe illustrator','adobe photoshop' ]
+                proficientWith: ['javascript', 'react','mongoDB','vercel', 'git', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
+                exposedTo: ['nodejs', 'python','firebase', 'adobe illustrator','adobe photoshop' ]
             }
         ,
         hobbies: [
@@ -113,16 +113,33 @@
         ],
         portfolio: [ // This is where your portfolio projects will be detailed
             {
-                title: "TechTonic Tribe",
-                live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
-                source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
+                title: "TechTonic Tribe portfolio",
+                live: "https://front-end-virid-eight.vercel.app", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+                source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
                 image: mock1
             },
             {
-                title: "Project 2",
-                live: "https://paytonpierce.dev",
-                source: "https://github.com/paytonjewell",
+                title: "Blog website ",
+                live: "https://front-end-virid-eight.vercel.app/blog", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+                source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                image: mock3
+            },
+            {
+                title: "Student Dashbord",
+                live: "https://front-end-virid-eight.vercel.app/dashboard", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+                source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
                 image: mock2
+            },
+            {
+                title: "Real time chat ",
+                live: "https://front-end-virid-eight.vercel.app/chat", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
+                source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                image: mock4
+            },
+            {
+                title: "Student Registartion Managment system ",
+                source: "https://github.com/Fitsumhelina/Student-Registration-system.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                image: mock5
             }
         ]
     }
