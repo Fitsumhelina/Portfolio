@@ -75,6 +75,7 @@ export default function Home({ innerRef }) {
           >
             {info.firstName}
           </span>
+          
           <span className={Style.hand}>🤚</span>
         </h1>
         <h2>I'm {info.position}.</h2>

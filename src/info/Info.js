@@ -41,15 +41,15 @@
             },
             {
                 emoji: '🌎',
-                text: 'based in the US'
+                text: 'based in Ethiopia'
             },
             {
                 emoji: "💼",
-                text: "Systems Engineer at Google"
+                text: "Software Engineer"
             },
             {
                 emoji: "📧",
-                text: "johnsmith@gmail.com"
+                text: "dev.fitsum@gmail.com"
             }
         ],
         
@@ -84,11 +84,11 @@
     // Just change the links so that they lead to your social profiles.
 
         ],
-        bio: "Hello! My name is  Fitsum. I'm a systems engineer for Google. I studied CompSci at Harvard, I enjoy long walks on the beach, and I believe artificial intelligence will inevitably rule us all one day. You should hire me!",
+        bio: "I am Fitsum Helina, a developer and president of my university club, currently studying software engineering. Alongside my coursework, I work on numerous real-world side projects.",
         skills:
             {
-                proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-                exposedTo: ['nodejs', 'python', 'adobe illustrator']
+                proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
+                exposedTo: ['nodejs', 'python', 'adobe illustrator','adobe photoshop' ]
             }
         ,
         hobbies: [
@@ -97,23 +97,23 @@
                 emoji: '📖'
             },
             {
-                label: 'theater',
-                emoji: '🎭'
+                label: 'teaching',
+                emoji: '👨‍🏫'
             },
             {
                 label: 'movies',
                 emoji: '🎥'
             },
             {
-                label: 'cooking',
-                emoji: '🌶'
+                label: 'biking',
+                emoji: '🚲'
             }
     // Same as above, change the emojis to match / relate to your hobbies or interests.
     // You can also remove the emojis if you'd like, I just think they look cute :P
         ],
         portfolio: [ // This is where your portfolio projects will be detailed
             {
-                title: "Project 1",
+                title: "TechTonic Tribe",
                 live: "https://paytonpierce.dev", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/paytonjewell", // this should be a link to the **repository** of the project, where the code is hosted.
                 image: mock1
@@ -123,24 +123,6 @@
                 live: "https://paytonpierce.dev",
                 source: "https://github.com/paytonjewell",
                 image: mock2
-            },
-            {
-                title: "Project 3",
-                live: "https://paytonpierce.dev",
-                source: "https://github.com/paytonjewell",
-                image: mock3
-            },
-            {
-                title: "Project 4",
-                live: "https://paytonpierce.dev",
-                source: "https://github.com/paytonjewell",
-                image: mock4
-            },
-            {
-                title: "Project 5",
-                live: "https://paytonpierce.dev",
-                source: "https://github.com/paytonjewell",
-                image: mock5
             }
         ]
     }
