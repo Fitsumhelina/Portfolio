@@ -109,10 +109,15 @@ This project is licensed under the MIT License. See the [LICENSE](./LICENSE) fil
 
 ## Contact
 
-You can find me on the following platforms:
 
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/fitsum-helina-57164828a/)
-- **Whatsapp**: [Your Instagram Profile](https://wa.me/251904377900)
+<p >
+  <img src="./public/assets/profilepic.jpg" alt="Fitsum Helina" width="100" height="100"/>
+</p>
+
+You can find me on the following platforms:
+- **Email**: dev.fitsum@gmail.com
+- **LinkedIn**: [Fitsum Helina](https://www.linkedin.com/in/fitsum-helina-57164828a/)
+- **Whatsapp**: [Fitsum Helina](https://wa.me/251904377900)
 
 Feel free to reach out if you have any questions or want to connect!
 
@@ -120,6 +125,3 @@ Feel free to reach out if you have any questions or want to connect!
 
 **Maintainer**: Fitsum Helina
 
-**Email**: dev.fitsum@gmail.com
-
-![Profile Picture](./public/assets/profilepic.jpg) <!-- Add your profile picture here -->
