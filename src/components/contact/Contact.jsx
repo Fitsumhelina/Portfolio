@@ -90,10 +90,10 @@ export default function Contact() {
         marginTop={"50px"}
       > 
         <div className={styles.icon}>
-          <a href="https://www.instagram.com/your-instagram-profile/" ><img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="Github" /></a>
-          <a href="https://www.twitter.com/your-twitter-profile/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Linkedin" /></a>
-          <a href="https://www.facebook.com/your-facebook-profile/"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="Telegram" /></a>
-          <a href="https://www.facebook.com/your-facebook-profile/"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="Whatsapp" /></a>
+          <a href="https://github.com/Fitsumhelina" ><img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="Github" /></a>
+          <a href="https://www.linkedin.com/in/fitsum-helina-57164828a/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Linkedin" /></a>
+          <a href="https://t.me/fitsumhelina"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="Telegram" /></a>
+          <a href="https://wa.me/251904377900"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="Whatsapp" /></a>
         </div>
       </Box>
     </>
