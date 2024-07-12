@@ -1,27 +1,49 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-const sgMail = require('@sendgrid/mail');
+const express = require('express');
+const bodyParser = require('body-parser');
+const nodemailer = require('nodemailer');
+const cors = require('cors');
 
-admin.initializeApp();
+const app = express();
+const PORT = process.env.PORT || 5000;
 
-// Replace with your SendGrid API Key
-sgMail.setApiKey(functions.config().sendgrid.key);
+// Middleware
+app.use(bodyParser.json());
+app.use(cors());
 
-exports.sendEmail = functions.https.onRequest(async (req, res) => {
-  const { email, textarea } = req.body;
+// POST route for form submission
+app.post('/submit-form', (req, res) => {
+    const { name, email, message } = req.body;
 
-  const msg = {
-    to: 'dev.fitsum@gmail.com', // Change to your recipient
-    from: 'your-verified-email@example.com', // Change to your verified sender
-    subject: 'Contact Form Submission',
-    text: `Email: ${email}\n\nMessage: ${textarea}`,
-  };
+    // Create reusable transporter object using the default SMTP transport
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: 'your-email@gmail.com', // Replace with your Gmail email
+            pass: 'your-password' // Replace with your Gmail password
+        }
+    });
 
-  try {
-    await sgMail.send(msg);
-    res.status(200).send('Email sent successfully');
-  } catch (error) {
-    console.error(error);
-    res.status(500).send('Error sending email');
-  }
+    // Setup email data with unicode symbols
+    const mailOptions = {
+        from: 'your-email@gmail.com', // Sender address
+        to: 'dev.fitsum@gmail.com', // List of receivers
+        subject: 'Feedback from Contact Form', // Subject line
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}` // Plain text body
+    };
+
+    // Send mail with defined transport object
+    transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            console.error('Error sending email:', error);
+            res.status(500).send('Error sending email');
+        } else {
+            console.log('Email sent:', info.response);
+            res.status(200).send('Email sent successfully');
+        }
+    });
+});
+
+// Start server
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`);
 });

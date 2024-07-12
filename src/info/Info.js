@@ -93,7 +93,7 @@ import { Details } from "@mui/icons-material"
                 title: "Blog website ",
                 live: "https://front-end-virid-eight.vercel.app/blog", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
-                Details:"Proresive Blog WedApp made by using REACT,TAILWID,EPRESS.JS and MONGODB",
+                Details:"Progressive Blog WedApp made by using REACT,TAILWID,EPRESS.JS and MONGODB",
                 image: mock3
             },
             {
