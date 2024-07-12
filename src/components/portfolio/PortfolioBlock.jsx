@@ -1,7 +1,7 @@
 import React from 'react';
 import IconLink from "./IconLink";
 import { Box } from "@mui/material";
-import styles from './PortfolioBlock.module.scss'; // Make sure to import the CSS file
+import styles from "./PortfolioBlock.module.scss";
 
 function PortfolioBlock(props) {
    const { image, live, source, title, details } = props;
@@ -10,17 +10,18 @@ function PortfolioBlock(props) {
          <div className={styles.cardContainer}>
             <div className={styles.card}>
                <img
-               
                   src={image}
                   className={styles.imgContent}
                   alt={'mockup'}
                />
                <div className={styles.content}>
-                  <h1 className={styles.heading}>{title}</h1>
-                  <p>{details}</p>
+                  <p className={styles.detail}>{details}</p>
                </div>
+
+
             </div>
          </div>
+         <h2 className={styles.topic}>{title}</h2>
          <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
             alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
             <Box p={1} border={'2px solid black'} borderRadius={'25px'}>

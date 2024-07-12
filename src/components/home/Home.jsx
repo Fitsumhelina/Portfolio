@@ -3,7 +3,6 @@ import Style from "./Home.module.scss";
 import me from "../../img/profile .jpg";
 import classNames from "classnames";
 import EmojiBullet from "./EmojiBullet";
-import SocialIcon from "./SocialIcon";
 import {Box} from '@mui/material';
 import { info } from "../../info/Info";
 import { motion } from 'framer-motion';
@@ -84,21 +83,7 @@ export default function Home({ innerRef }) {
             <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
           ))}
         </Box>
-        <Box
-          display={"flex"}
-          gap={"1.5rem"}
-          justifyContent={"center"}
-          fontSize={{ xs: "2rem", md: "2.5rem" }}
-        >
-          {info.socials.map((social, index) => (
-            <SocialIcon
-              key={index}
-              link={social.link}
-              icon={social.icon}
-              label={social.label}
-            />
-          ))}
-        </Box>
+       
       </Box>
     </Box>
   );

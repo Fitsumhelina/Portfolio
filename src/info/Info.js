@@ -4,6 +4,7 @@
     import mock3 from "../img/mock3.png"
     import mock4 from "../img/mock4.png"
     import mock5 from "../img/mock5.png"
+import { Details } from "@mui/icons-material"
 
     /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
     how to make this template work best for you! */
@@ -84,11 +85,11 @@
     // Just change the links so that they lead to your social profiles.
 
         ],
-        bio: "I am Fitsum Helina, a developer and president of my university club, currently studying software engineering. Alongside my coursework, I work on numerous real-world side projects.",
+        bio: "I am a Mern Stack developer and president of my university club(TechTonic Tribe), currently studying BCA in software engineering. Alongside my coursework, I work on numerous real-world side projects and Internship.",
         skills:
             {
-                proficientWith: ['javascript', 'react','mongoDB','vercel', 'git', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
-                exposedTo: ['nodejs', 'python','firebase', 'adobe illustrator','adobe photoshop' ]
+                proficientWith: ['javascript', 'react','mongoDB','vercel', 'git','adobe illustrator', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
+                exposedTo: ['nodejs', 'python','firebase', 'adobe photoshop' ]
             }
         ,
         hobbies: [
@@ -116,29 +117,34 @@
                 title: "TechTonic Tribe portfolio",
                 live: "https://front-end-virid-eight.vercel.app", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
-                image: mock1
+                image: mock1,
+                Details:"Landing page for tech club in the universty made by using REACT,CSS"
             },
             {
                 title: "Blog website ",
                 live: "https://front-end-virid-eight.vercel.app/blog", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                Details:"Proresive Blog WedApp made by using REACT,TAILWID,EPRESS.JS and MONGODB",
                 image: mock3
             },
             {
                 title: "Student Dashbord",
                 live: "https://front-end-virid-eight.vercel.app/dashboard", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                Details:"Resourcefull Website To help the student to get the Best Material made by using REACT,CSS,JAVASCRIPT,MONGODB",
                 image: mock2
             },
             {
                 title: "Real time chat ",
                 live: "https://front-end-virid-eight.vercel.app/chat", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
                 source: "https://github.com/Fitsumhelina/TechTonic-Tribe.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                Details:"Real Time Chat app Use for Comminication Made by using React,Firebase,CSS",
                 image: mock4
             },
             {
                 title: "Student Registartion Managment system ",
                 source: "https://github.com/Fitsumhelina/Student-Registration-system.git", // this should be a link to the **repository** of the project, where the code is hosted.
+                Details:"Advanced stuednt managment systemin During registration Using PYTHON oop",
                 image: mock5
             }
         ]
