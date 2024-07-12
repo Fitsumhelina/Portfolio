@@ -57,7 +57,7 @@ import { Details } from "@mui/icons-material"
         bio: "I am a Mern Stack developer and president of my university club(TechTonic Tribe), currently studying BCA in software engineering. Alongside my coursework, I work on numerous real-world side projects and Internship.",
         skills:
             {
-                proficientWith: ['javascript', 'react','mongoDB','vercel', 'git','adobe illustrator', 'github', 'bootstrap','tailwind', 'html5', 'css3', 'figma'],
+                proficientWith: ['javascript', 'react','mongoDB','vercel', 'git','adobe illustrator', 'github', 'postman','tailwind', 'html5', 'css3', 'figma'],
                 exposedTo: ['nodejs', 'python','firebase', 'adobe photoshop' ]
             }
         ,
