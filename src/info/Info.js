@@ -54,37 +54,6 @@ import { Details } from "@mui/icons-material"
             }
         ],
         
-        socials: [
-            {
-                link: "https://facebook.com",
-                icon: 'https://cdn-icons-png.flaticon.com/128/2111/2111646.png  ',
-                label: 'telegram'
-            },
-            {
-                link: "https://instagram.com",
-                icon: 'https://cdn-icons-png.flaticon.com/128/15713/15713420.png',
-                label: 'instagram'
-            },
-            {
-                link: "https://github.com",
-                icon: "https://cdn-icons-png.flaticon.com/128/2111/2111432.png",
-                label: 'github'
-            },
-            {
-                link: "https://linkedin.com",
-                icon: "https://cdn-icons-png.flaticon.com/128/3536/3536505.png",
-                label: 'linkedin'
-            },
-            {
-                link: "https://linkedin.com",
-                icon: "https://cdn-icons-png.flaticon.com/128/15707/15707820.png",
-                label: 'Whatsapp'
-            }
-        
-    // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-    // Just change the links so that they lead to your social profiles.
-
-        ],
         bio: "I am a Mern Stack developer and president of my university club(TechTonic Tribe), currently studying BCA in software engineering. Alongside my coursework, I work on numerous real-world side projects and Internship.",
         skills:
             {

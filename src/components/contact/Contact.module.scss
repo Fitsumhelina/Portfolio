@@ -1,110 +1,127 @@
 @import "../../variables.modules";
 
 .formContainer {
-    width: 90vw; /*djust width as needed */
-    max-width: 600px; /* Limit maximum width */
-    margin: 0 auto; /* Center horizontally */
-    margin-top: 50px;
-    background: #27242f;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px; 
-    border: 1px solid #ff1cfb;
-    padding: 32px 24px;
-    font-size: 16px; /* Increase font size */
-    font-family: inherit;
-    color: white;
-    display: flex;  
-    flex-direction: column;
-    gap: 20px;
-    box-sizing: border-box;
-    border-radius: 16px;
-    background-size: 200% 100%;
-    animation: gradient 5s ease infinite;
-    text-align: center; /* Center text content */
+  width: 90vw; /*djust width as needed */
+  max-width: 600px; /* Limit maximum width */
+  margin: 0 auto; /* Center horizontally */
+  margin-top: 50px;
+  background: #27242f;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  border: 1px solid #ff1cfb;
+  padding: 32px 24px;
+  font-size: 16px; /* Increase font size */
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
+  text-align: center; /* Center text content */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.formContainer button:active {
+  transform: scale(0.95);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Increased gap between form groups */
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 8px; /* Increased margin bottom for labels */
+  color: #bbbbbb;
+  font-weight: 600;
+  font-size: 14px; /* Increased font size for labels */
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 14px 18px; /* Increased padding */
+  border-radius: 10px; /* Slightly increased border radius */
+  color: #fff;
+  font-family: inherit;
+  background-color: transparent;
+  border: 1px solid #414141;
+  font-size: 16px; /* Increased font size for inputs */
+}
+
+.formGroup textarea {
+  height: 120px; /* Increased height for textarea */
+  max-width: 90vw;
+}
+
+.formGroup input::placeholder {
+  opacity: 0.5;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  outline: none;
+  border-color: #e81cff;
+}
+
+.formSubmitBtn {
+  display: inline-block; /* Make button inline block for centered alignment */
+  font-family: inherit;
+  color: #fff;
+  font-weight: 600;
+  width: auto; /* Auto width based on content */
+  background: #313131;
+  border: 1px solid #414141;
+  padding: 14px 24px; /* Increased padding */
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  border-radius: 8px; /* Slightly decreased border radius */
+  transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.formSubmitBtn:hover {
+  background-color: #e81cff;
+  border-color: #fff;
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.icon {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+
+  img{
+    width: 40px; /* Adjust the size as needed */
+    height: 40px;
+    filter: grayscale(100%) brightness(80%);
+
+    &:hover{
+      transform: scale(1.1);
+      filter: grayscale(1%) brightness(100%);
+
     }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
   }
-  
-  .formContainer button:active {
-    transform: scale(0.95);
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .formGroup {
-    display: flex;
-    flex-direction: column;
-    gap: 12px; /* Increased gap between form groups */
-  }
-  
-  .formGroup label {
-    display: block;
-    margin-bottom: 8px; /* Increased margin bottom for labels */
-    color: #bbbbbb;
-    font-weight: 600;
-    font-size: 14px; /* Increased font size for labels */
-  }
-  
-  .formGroup input,
-  .formGroup textarea {
-    width: 100%;
-    padding: 14px 18px; /* Increased padding */
-    border-radius: 10px; /* Slightly increased border radius */
-    color: #fff;
-    font-family: inherit;
-    background-color: transparent;
-    border: 1px solid #414141;
-    font-size: 16px; /* Increased font size for inputs */
-  }
-  
-  .formGroup textarea {
-    height: 120px; /* Increased height for textarea */
-    max-width: 90vw;
-  }
-  
-  .formGroup input::placeholder {
-    opacity: 0.5;
-  }
-  
-  .formGroup input:focus,
-  .formGroup textarea:focus {
-    outline: none;
-    border-color: #e81cff;
-  }
-  
-  .formSubmitBtn {
-    display: inline-block; /* Make button inline block for centered alignment */
-    font-family: inherit;
-    color: #fff;
-    font-weight: 600;
-    width: auto; /* Auto width based on content */
-    background: #313131;
-    border: 1px solid #414141;
-    padding: 14px 24px; /* Increased padding */
-    font-size: 16px; /* Increased font size */
-    cursor: pointer;
-    border-radius: 8px; /* Slightly decreased border radius */
-    transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-  }
-  
-  .formSubmitBtn:hover {
-    background-color: #e81cff;
-    border-color: #fff;
-    transform: scale(1.05); /* Scale up on hover */
-  }
-  
+}

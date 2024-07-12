@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.scss';
-import SocialIcon from "./SocialIcon";
-import { info } from "../../info/Info";
 import { Box } from '@mui/material';
 
 export default function Contact() {
@@ -50,7 +48,7 @@ export default function Contact() {
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="textarea">How Can We Help You?</label>
+            <label htmlFor="textarea">How Can I Help You?</label>
             <textarea
               required
               cols="50"
@@ -72,19 +70,19 @@ export default function Contact() {
         display={"flex"}
         gap={"1.5rem"}
         justifyContent={"center"}
-        fontSize={{ xs: "2rem", md: "2.5rem" }}
-      >
-        <h1>icon here</h1>
-        {info.socials.map((social, index) => (
-          <SocialIcon
-            key={index}
-            link={social.link}
-            icon={social.icon}
-            label={social.label}
-          />
-        ))}
-        <h3>iconend</h3>
+        fontSize={{ xs: "1.2rem", md: "1.5rem" }}
+        marginTop={"50px"}
+        
+      > 
+
+      <div className={styles.icon}>
+        <a href="https://www.instagram.com/your-instagram-profile/" ><img src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png" alt="Github" /></a>
+        <a href="https://www.twitter.com/your-twitter-profile/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Linkedin" /></a>
+        <a href="https://www.facebook.com/your-facebook-profile/"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="Telegram" /></a>
+        <a href="https://www.facebook.com/your-facebook-profile/"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="Whatsapp" /></a>
+      </div>
       </Box>
     </>
   );
 }
+
