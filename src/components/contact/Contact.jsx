@@ -1,101 +1,40 @@
-import React, { useState } from 'react';
-import styles from './Contact.module.scss';
-import { Box } from '@mui/material';
+import React from 'react';
+import styles from './ContactMe.module.scss';
 
-export default function Contact() {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    try {
-      const response = await fetch('/submit-form', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        console.log('Email sent successfully');
-        setSubmitted(true);
-        setFormData({ name: '', email: '', message: '' });
-        setTimeout(() => setSubmitted(false), 3000); // Clear submitted message after 3 seconds
-      } else {
-        console.error('Failed to send email');
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
-    }
-  };
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
+const ContactMe = () => {
   return (
-    <>
-      <div className={styles.formContainer}>
-        <form className={styles.form} onSubmit={handleSubmit}>
-          <div className={styles.formGroup}>
-            <label htmlFor="name">Your Name</label>
-            <input
-              required
-              name="name"
-              id="name"
-              type="text"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder="Enter your name"
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="email">Your Email</label>
-            <input
-              required
-              name="email"
-              id="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-            />
-          </div>
-          <div className={styles.formGroup}>
-            <label htmlFor="message">How Can I Help You?</label>
-            <textarea
-              required
-              cols="50"
-              rows="6"
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Type your message here"
-            />
-          </div>
-          <button type="submit" className={styles.formSubmitBtn}>
-            Submit
-          </button>
-          {submitted && <p className={styles.successMessage}>Message sent successfully!</p>}
-        </form>
-      </div>
-      <Box
-        display={"flex"}
-        gap={"1.5rem"}
-        justifyContent={"center"}
-        fontSize={{ xs: "1.2rem", md: "1.5rem" }}
-        marginTop={"50px"}
-      > 
-        <div className={styles.icon}>
+    <div className={styles.contactMe}>
+      <h1>Contact <span>Me</span></h1>
+      <div className={styles.info}>
+        <div className={styles.item}>
+          <p>📍 Location</p>
+          <p>Addis Ababa, Ethiopia</p>
+        </div>
+        <div className={styles.item}>
+          <p>✉️ Email</p>
+          <p>dev.fitsum@gmail.com</p>
+        </div>
+        <div className={styles.item}>
+          <p>📞 Phone Number</p>
+          <p>+251-904-377-900</p>
+        </div>
+        <div className={styles.item}>
+          <p>🎓 Education</p>
+          <p>Debre Berhan University, Ethiopia</p>
+        </div>
+        <div className={styles.item}>
+          <p>🗣️ Languages</p>
+          <p>Amharic, English</p>
+        </div>
+        <div className={styles.socialIcons}>
           <a href="https://github.com/Fitsumhelina" ><img src="https://cdn-icons-png.flaticon.com/128/270/270798.png" alt="Github" /></a>
           <a href="https://www.linkedin.com/in/fitsum-helina-57164828a/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png" alt="Linkedin" /></a>
           <a href="https://t.me/fitsumhelina"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111646.png" alt="Telegram" /></a>
           <a href="https://wa.me/251904377900"><img src="https://cdn-icons-png.flaticon.com/128/15707/15707820.png" alt="Whatsapp" /></a>
         </div>
-      </Box>
-    </>
+      </div>
+    </div>
   );
 }
+
+export default ContactMe;

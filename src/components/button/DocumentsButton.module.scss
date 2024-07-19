@@ -1,0 +1,77 @@
+// DocumentsButton.module.scss
+
+.DocumentsBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    height: 45px;
+    border: none;
+    padding: 0px 15px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)); /* Standard syntax */
+    gap: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .folderContainer {
+    width: 40px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .fileBack {
+    z-index: 1;
+    width: 80%;
+    height: auto;
+  }
+  
+  .filePage {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+  }
+  
+  .fileFront {
+    width: 85%;
+    height: auto;
+    position: absolute;
+    z-index: 3;
+    opacity: 0.95;
+    transform-origin: bottom;
+    transition: all 0.3s ease-out;
+  }
+  
+  .text {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .DocumentsBtn:hover .filePage {
+    transform: translateY(-5px);
+  }
+  
+  .DocumentsBtn:hover {
+    background-color: rgb(58, 58, 94);
+  }
+  
+  .DocumentsBtn:active {
+    transform: scale(0.95);
+  }
+  
+  .DocumentsBtn:hover .fileFront {
+    transform: rotateX(30deg);
+  }
+  

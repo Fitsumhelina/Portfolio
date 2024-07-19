@@ -6,6 +6,8 @@ import EmojiBullet from "./EmojiBullet";
 import {Box} from '@mui/material';
 import { info } from "../../info/Info";
 import { motion } from 'framer-motion';
+import DocumentsButton from "../button/DocumentsButton";
+import SendButton from "../button/SendButton";
 
 const jiggle = {
    animate: {
@@ -82,6 +84,10 @@ export default function Home({ innerRef }) {
           {info.miniBio.map((bio, index) => (
             <EmojiBullet key={index} emoji={bio.emoji} text={bio.text} />
           ))}
+        </Box>
+        <Box display={"flex"} gap={"20px"}>
+         <SendButton/>
+         <DocumentsButton/>
         </Box>
        
       </Box>

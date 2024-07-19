@@ -24,12 +24,26 @@ function PortfolioBlock(props) {
          <h2 className={styles.topic}>{title}</h2>
          <Box className={'portfolio'} display={'flex'} flexDirection={'column'} gap={'0.5rem'}
             alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
+               <Box
+               p={1}
+               border={'2px solid'}
+               sx={{
+                  borderImage: 'linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)) 1',
+
+               }}
+            >
                <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'} />
             </Box>
-            <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
+            <Box
+               p={1}
+               border={'2px solid'}
+               sx={{
+                  borderImage: 'linear-gradient(135deg, rgb(0,255,164), rgb(166,104,255)) 1'
+               }}
+            >
                <IconLink link={source} title={'Source Code'} icon={'fa fa-code'} />
             </Box>
+
          </Box>
       </Box>
    );
