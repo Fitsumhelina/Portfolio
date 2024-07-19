@@ -4,10 +4,11 @@ import styles from './DocumentsButton.module.scss';
 const DocumentsButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = './../../../public/resume.pdf';  // Ensure this path points to your resume file
+    link.href = '/resume.pdf';  // Path from the public directory
     link.download = 'resume.pdf';
     link.click();
   };
+  
 
   return (
     <button className={styles.DocumentsBtn} onClick={handleDownload}>
