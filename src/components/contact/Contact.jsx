@@ -7,7 +7,7 @@ const ContactMe = () => {
       <h1>Contact <span>Me</span></h1>
       <div className={styles.info}>
         <div className={styles.item}>
-          <p>📍 Location</p>
+          <p>🚩 Location</p>
           <p>Addis Ababa, Ethiopia</p>
         </div>
         <div className={styles.item}>

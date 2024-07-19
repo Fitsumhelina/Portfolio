@@ -66,7 +66,7 @@ export default function Home({ innerRef }) {
         </motion.div>
       <Box>
         <h1>
-          Hi, I'm{" "}
+          Hi, I'm {" "}
           <span
             style={{
               background: info.gradient,

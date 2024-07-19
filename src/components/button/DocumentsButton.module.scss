@@ -16,6 +16,10 @@
     gap: 10px;
     cursor: pointer;
     transition: all 0.3s;
+    &:hover{
+    transform: translateY(-3px);
+
+    }
   }
   
   .folderContainer {
