@@ -4,7 +4,7 @@ import Terminal from "./Terminal";
 import { Box } from "@mui/material";
 import { info } from "../../info/Info";
 import { FaJs, FaReact, FaNode, FaGit, FaGithub, FaHtml5, FaCss3, FaFigma, FaPython } from 'react-icons/fa';
-import { SiMongodb, SiFirebase, SiAdobeillustrator, SiAdobephotoshop, SiPostman, SiTailwindcss, SiVercel } from 'react-icons/si';
+import { SiMongodb, SiFirebase, SiPostgresql, SiAdobephotoshop, SiPostman, SiTailwindcss, SiVercel } from 'react-icons/si';
 
 const iconMapping = {
     javascript: <FaJs />,
@@ -12,7 +12,7 @@ const iconMapping = {
     mongoDB: <SiMongodb />,
     vercel: <SiVercel />,
     git: <FaGit />,
-    'adobe illustrator': <SiAdobeillustrator />,
+    postgres: <SiPostgresql />,
     github: <FaGithub />,
     postman: <SiPostman />,
     tailwind: <SiTailwindcss />,
