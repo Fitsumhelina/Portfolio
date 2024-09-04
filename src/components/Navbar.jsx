@@ -30,6 +30,7 @@ const links = [
         active: 'portfolio'
     },
     {
+        
         name: 'Contact',
         to: 'contact',
         active: 'contact'
