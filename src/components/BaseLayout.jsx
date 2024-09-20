@@ -7,6 +7,7 @@ import MultiPageRoutes from './MultiPageRoutes';
 import { singlePage } from '../info/Info';
 import SinglePageRoutes from './SinglePageRoutes';
 import useScrollObserver from '../hooks/useScrollObserver';
+import logo from './../img/logo.png'
 
 export default function BaseLayout() {
    const location = useLocation()
@@ -50,7 +51,7 @@ export default function BaseLayout() {
                <Box component={'footer'} display={'flex'} flexDirection={'row'} alignItems={'center'} justifyContent={"center"}
                gap={"5px"}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}  >
-                  <img src="https://media.licdn.com/dms/image/D4E03AQEj66aWKLPzqQ/profile-displayphoto-shrink_100_100/0/1718874408082?e=1726099200&v=beta&t=yNihAeqGx6b5PgI9urirTz2x2roZnD8fpEKcaXr_x9k" alt="logo"  />
+                  <img src={logo} alt="logo"  />
                   <p>fitsum helina's portfolio &copy; 2024</p>
                </Box>
             </Grid>
