@@ -3,7 +3,8 @@ import mock1 from "../img/mock1.png";
 import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
 import mock4 from "../img/mock4.png";
-import mock5 from "../img/mock5.png";
+import mock5 from "../img/mock5.jpg";
+import mock5 from "../img/mock6.png";
 import { Details } from "@mui/icons-material";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -128,10 +129,17 @@ export const info = {
       image: mock4,
     },
     {
-      title: "Student Registartion Managment system ",
-      source: "https://github.com/Fitsumhelina/Student-Registration-system.git", // this should be a link to the **repository** of the project, where the code is hosted.
+      title: "Business Directory",
+      source: "https://github.com/Fitsumhelina/business-directory-backend", // this should be a link to the **repository** of the project, where the code is hosted.
       Details:
-        "Advanced stuednt managment systemin During registration Using PYTHON oop",
+        "I was the Backend developer in Advanced and flexible Business Directory system ",
+      image: mock5,
+    },
+    {
+      title: "Club's landing page",
+      source: "https://github.com/Fitsumhelina/TechTonic-Landing.git", // this should be a link to the **repository** of the project, where the code is hosted.
+      Details:
+        "Fully responsive landing page for the club made by using REACT,Tailwind",
       image: mock5,
     },
   ],
