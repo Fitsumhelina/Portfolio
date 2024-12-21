@@ -52,7 +52,7 @@ export default function BaseLayout() {
                gap={"5px"}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}  >
                   <img src={logo} alt="logo"  />
-                  <p>fitsum helina's portfolio &copy; 2024</p>
+                  <p>All Right Reserved to <b>Fitsumhelina</b> &copy; 2024</p>
                </Box>
             </Grid>
          </Grid>
