@@ -4,8 +4,8 @@ import styles from './DocumentsButton.module.scss';
 const DocumentsButton = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/resume.pdf';  // Path from the public directory
-    link.download = 'resume.pdf';
+    link.href = 'https://drive.google.com/file/d/1q4tJEYce5L956NcbJpYvWvGAD7HR3t5L/view?usp=drive_link';  // Path from the public directory
+    // link.download = 'resume.pdf';
     link.click();
   };
   
