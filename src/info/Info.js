@@ -137,6 +137,7 @@ export const info = {
     },
     {
       title: "Club's landing page",
+      live: "https://techtonictribe.netlify.app/", //this should be a link to the live version of your project, think github pages, netlify, heroku, etc. Or your own domain, if you have it.
       source: "https://github.com/Fitsumhelina/TechTonic-Landing.git", // this should be a link to the **repository** of the project, where the code is hosted.
       Details:
         "Fully responsive landing page for the club made by using REACT,Tailwind",
