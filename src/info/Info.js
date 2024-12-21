@@ -4,7 +4,7 @@ import mock2 from "../img/mock2.png";
 import mock3 from "../img/mock3.png";
 import mock4 from "../img/mock4.png";
 import mock5 from "../img/mock5.jpg";
-import mock5 from "../img/mock6.png";
+import mock6 from "../img/mock6.png";
 import { Details } from "@mui/icons-material";
 
 /* Hi there! Thanks for checking out my portfolio template. Be sure to read the comments to get a better understanding of
@@ -140,7 +140,7 @@ export const info = {
       source: "https://github.com/Fitsumhelina/TechTonic-Landing.git", // this should be a link to the **repository** of the project, where the code is hosted.
       Details:
         "Fully responsive landing page for the club made by using REACT,Tailwind",
-      image: mock5,
+      image: mock6,
     },
   ],
 };
