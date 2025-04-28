@@ -21,33 +21,6 @@ Welcome to my portfolio website! This website showcases my projects, skills, and
 - **Dynamic Content**: Easy to update content through structured data files.
 - **Contact Form**: Allows visitors to send you a message directly from the website.
 
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/portfolio-website.git
-    cd portfolio-website
-    ```
-
-2. Install the dependencies:
-
-    ```bash
-    npm install
-    ```
-
-
-3. Start the development server:
-
-    ```bash
-    npm start
-    ```
-
-4. Open your browser and navigate to `http://localhost:3000`.
-
-## Usage
 
 This portfolio website consists of various sections:
 
