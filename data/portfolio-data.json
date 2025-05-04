@@ -13,16 +13,16 @@
     "phone": "+(251)904377900",
     "workingHours": "Everyday till i die ",
     "availableForWork": true,
-    "badges": ["UI/UX", "Full-stack  Development", "Database Design"],
+    "badges": ["UI/UX","Graphics Design", "Full-stack  Development", "Database Design"],
     "social": [
       {
         "platform": "GitHub",
-        "url": "#",
+        "url": "https://github.com/Fitsumhelina",
         "icon": "Github"
       },
       {
         "platform": "LinkedIn",
-        "url": "#",
+        "url": "https://www.linkedin.com/in/fitsumhelina/",
         "icon": "Linkedin"
       },
       {
