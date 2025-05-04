@@ -1,18 +1,19 @@
 {
   "meta": {
-    "title": "Jane Doe | Product Designer",
-    "description": "Portfolio website showcasing product design work and skills"
+    "title": "Fitsum. |  Developer",
+    "description": "a little about me "
   },
   "personal": {
-    "name": "Jane Doe",
-    "title": "Product Designer",
-    "location": "San Francisco, CA",
-    "avatar": "/confident-professional.png",
-    "email": "jane.doe@example.com",
-    "phone": "+1 (415) 555-2671",
-    "workingHours": "Monday - Friday, 9am - 5pm PST",
+    "firstName": "Fitsum .",
+    "name": "Fitsum Helina",
+    "title": "Developer",
+    "location": "Addis Abeba, Ethiopia",
+    "avatar": "/data/Img/avatar.png",
+    "email": "dev.fitsum@gmail.com",
+    "phone": "+(251)904377900",
+    "workingHours": "Everyday till i die ",
     "availableForWork": true,
-    "badges": ["UI/UX", "Product Design", "Prototyping"],
+    "badges": ["UI/UX", "Full-stack  Development", "Database Design"],
     "social": [
       {
         "platform": "GitHub",
