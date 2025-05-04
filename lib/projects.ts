@@ -1,186 +1,4 @@
-# Portfolio Website with JSON Content Management
-
-This portfolio website is designed to be easily customizable through a JSON data file. This allows you to update your content without having to modify the codebase directly.
-
-## How to Update Content
-
-All content is stored in the `data/portfolio-data.json` file. You can edit this file to update the information displayed on your portfolio website.
-
-### Structure of the JSON File
-
-The JSON file is organized into several sections:
-
-1. **Meta**: Contains metadata about the website, such as the title and description.
-2. **Personal**: Contains personal information like name, title, location, contact details, and social media links.
-3. **About**: Contains information about yourself, including bio, professional focus, languages, and interests.
-4. **Navigation**: Contains the navigation menu items.
-5. **Experience**: Contains your work experience details.
-6. **Credentials**: Contains your certifications, education, and skills.
-7. **Technical Skills**: Contains your technical skills categorized by type.
-
-### Updating Specific Sections
-
-#### Personal Information
-
-\`\`\`json
-"personal": {
-  "name": "Your Name",
-  "title": "Your Title",
-  "location": "Your Location",
-  "avatar": "/path/to/your/avatar.png",
-  "email": "your.email@example.com",
-  "phone": "Your Phone Number",
-  "workingHours": "Your Working Hours",
-  "availableForWork": true,
-  "badges": ["Badge 1", "Badge 2", "Badge 3"],
-  "social": [
-    {
-      "platform": "GitHub",
-      "url": "https://github.com/yourusername",
-      "icon": "Github"
-    },
-    // Add more social links as needed
-  ]
-}
-\`\`\`
-
-#### About Information
-
-\`\`\`json
-"about": {
-  "bio": "Your bio text here...",
-  "focus": [
-    "Focus point 1",
-    "Focus point 2",
-    "Focus point 3"
-  ],
-  "languages": [
-    {
-      "name": "Language Name",
-      "proficiency": "Proficiency Level",
-      "level": 100,
-      "flag": "🏳️"
-    },
-    // Add more languages as needed
-  ],
-  "interests": [
-    "Interest 1",
-    "Interest 2",
-    // Add more interests as needed
-  ]
-}
-\`\`\`
-
-#### Experience
-
-\`\`\`json
-"experience": [
-  {
-    "title": "Job Title",
-    "company": "Company Name",
-    "period": "Employment Period",
-    "description": "Job description...",
-    "achievements": [
-      "Achievement 1",
-      "Achievement 2",
-      // Add more achievements as needed
-    ],
-    "technologies": ["Technology 1", "Technology 2"]
-  },
-  // Add more experiences as needed
-]
-\`\`\`
-
-#### Credentials
-
-\`\`\`json
-"credentials": {
-  "certifications": [
-    {
-      "name": "Certification Name",
-      "issuer": "Issuer Name",
-      "date": "Issue Date",
-      "logo": "/path/to/logo.png"
-    },
-    // Add more certifications as needed
-  ],
-  "education": [
-    {
-      "degree": "Degree Name",
-      "institution": "Institution Name",
-      "year": "Year Range",
-      "logo": "/path/to/logo.png"
-    },
-    // Add more education entries as needed
-  ],
-  "skills": [
-    "Skill 1",
-    "Skill 2",
-    // Add more skills as needed
-  ]
-}
-\`\`\`
-
-#### Technical Skills
-
-\`\`\`json
-"technicalSkills": {
-  "design": [
-    "Design Skill 1",
-    "Design Skill 2",
-    // Add more design skills as needed
-  ],
-  "development": [
-    "Development Skill 1",
-    "Development Skill 2",
-    // Add more development skills as needed
-  ],
-  "uxMethods": [
-    "UX Method 1",
-    "UX Method 2",
-    // Add more UX methods as needed
-  ],
-  "softSkills": [
-    "Soft Skill 1",
-    "Soft Skill 2",
-    // Add more soft skills as needed
-  ]
-}
-\`\`\`
-
-## Adding Images
-
-To add or update images:
-
-1. Place your image files in the `public` directory.
-2. Update the paths in the JSON file to point to your new images.
-
-## Projects
-
-Projects are managed separately in the `lib/projects.ts` file. You can update this file to add, remove, or modify projects.
-
-## Development
-
-To run the development server:
-
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-\`\`\`
-
-This refactoring allows users to update all content through the JSON file without modifying the codebase. The components now dynamically read from this data source, making content updates easier and more manageable.
-\`\`\`
-
-
-
-```ts file="lib/projects.ts"
-[v0-no-op-code-block-prefix]export interface ProjectGalleryImage {
+export interface ProjectGalleryImage {
   url: string
   caption?: string
 }
@@ -361,3 +179,31 @@ const projects: Project[] = [
 ]
 
 export { projects }
+
+// Add these functions after the projects array export
+
+export function getAllProjects(): Project[] {
+  return projects
+}
+
+export function getProjectBySlug(slug: string): Project | undefined {
+  return projects.find((project) => project.slug === slug)
+}
+
+export function getRelatedProjects(currentSlug: string, limit = 2): RelatedProject[] {
+  const currentProject = getProjectBySlug(currentSlug)
+  if (!currentProject || !currentProject.relatedProjects) {
+    // If no related projects defined, return random projects
+    return projects
+      .filter((project) => project.slug !== currentSlug)
+      .slice(0, limit)
+      .map((project) => ({
+        slug: project.slug,
+        title: project.title,
+        category: project.category,
+        image: project.thumbnailImage,
+      }))
+  }
+
+  return currentProject.relatedProjects.slice(0, limit)
+}

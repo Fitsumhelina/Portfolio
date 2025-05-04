@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "title": "Jane Doe | Product Designer",
+    "description": "Portfolio website showcasing product design work and skills"
+  },
+  "personal": {
+    "name": "Jane Doe",
+    "title": "Product Designer",
+    "location": "San Francisco, CA",
+    "avatar": "/confident-professional.png",
+    "email": "jane.doe@example.com",
+    "phone": "+1 (415) 555-2671",
+    "workingHours": "Monday - Friday, 9am - 5pm PST",
+    "availableForWork": true,
+    "badges": ["UI/UX", "Product Design", "Prototyping"],
+    "social": [
+      {
+        "platform": "GitHub",
+        "url": "#",
+        "icon": "Github"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "#",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Twitter",
+        "url": "#",
+        "icon": "Twitter"
+      },
+      {
+        "platform": "Instagram",
+        "url": "#",
+        "icon": "Instagram"
+      }
+    ]
+  },
+  "about": {
+    "bio": "I create user-centered digital experiences that solve real problems. Passionate about accessibility and ethical design with over 5 years of experience in product design and user experience research.",
+    "focus": [
+      "Creating intuitive and accessible digital products",
+      "Leading design teams and establishing design systems",
+      "Conducting user research to inform product decisions"
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "proficiency": "Native",
+        "level": 100,
+        "flag": "🇺🇸"
+      },
+      {
+        "name": "Spanish",
+        "proficiency": "Fluent",
+        "level": 80,
+        "flag": "🇪🇸"
+      },
+      {
+        "name": "French",
+        "proficiency": "Intermediate",
+        "level": 60,
+        "flag": "🇫🇷"
+      },
+      {
+        "name": "German",
+        "proficiency": "Basic",
+        "level": 30,
+        "flag": "🇩🇪"
+      }
+    ],
+    "interests": ["Design Systems", "Accessibility", "Typography", "Motion Design", "Photography"]
+  },
+  "navigation": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Experience",
+      "href": "#experience"
+    },
+    {
+      "label": "Credentials",
+      "href": "#credentials"
+    },
+    {
+      "label": "Skills",
+      "href": "#skills"
+    },
+    {
+      "label": "Projects",
+      "href": "#projects"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Senior Product Designer",
+      "company": "TechCorp Inc.",
+      "period": "2021 - Present",
+      "description": "Lead the design of flagship products, managing a team of 3 designers. Implemented a design system that reduced design inconsistencies by 60% and improved development time by 40%. Conducted user research and usability testing to inform product decisions.",
+      "achievements": [
+        "Redesigned the main dashboard, increasing user engagement by 35%",
+        "Led the design for 3 major feature launches, contributing to a 25% increase in user retention",
+        "Established design processes that improved team collaboration and product quality"
+      ],
+      "technologies": ["Figma", "Adobe XD", "Prototyping", "User Research"]
+    },
+    {
+      "title": "UX Designer",
+      "company": "Design Studio X",
+      "period": "2018 - 2021",
+      "description": "Collaborated with cross-functional teams to design intuitive and engaging user experiences for various client projects. Created wireframes, prototypes, and high-fidelity designs for web and mobile applications.",
+      "achievements": [
+        "Designed interfaces for 12+ client projects across fintech, healthcare, and e-commerce",
+        "Improved conversion rates by an average of 22% through data-driven design iterations",
+        "Mentored junior designers and facilitated design thinking workshops"
+      ],
+      "technologies": ["Sketch", "InVision", "User Testing", "Information Architecture"]
+    },
+    {
+      "title": "UI/UX Intern",
+      "company": "Creative Solutions",
+      "period": "2017 - 2018",
+      "description": "Assisted the design team in creating visual assets and interface components. Participated in brainstorming sessions and contributed to the design of marketing websites and mobile applications.",
+      "achievements": [
+        "Redesigned the company website, improving mobile responsiveness",
+        "Created a component library that streamlined the design process",
+        "Conducted competitive analysis for 5 client projects"
+      ],
+      "technologies": ["Adobe Creative Suite", "HTML/CSS", "Wireframing"]
+    }
+  ],
+  "credentials": {
+    "certifications": [
+      {
+        "name": "Certified UX Professional",
+        "issuer": "Nielsen Norman Group",
+        "date": "2022",
+        "logo": "/nng-logo.png"
+      },
+      {
+        "name": "Professional Product Designer",
+        "issuer": "Interaction Design Foundation",
+        "date": "2021",
+        "logo": "/generic-military-logo.png"
+      },
+      {
+        "name": "Design Leadership Certification",
+        "issuer": "IDEO",
+        "date": "2020",
+        "logo": "/ideo-logo.png"
+      }
+    ],
+    "education": [
+      {
+        "degree": "Master of Fine Arts in Design",
+        "institution": "Rhode Island School of Design",
+        "year": "2015-2017",
+        "logo": "/generic-art-school-logo.png"
+      },
+      {
+        "degree": "Bachelor of Arts in Visual Communication",
+        "institution": "California Institute of the Arts",
+        "year": "2011-2015",
+        "logo": "/calarts-logo.png"
+      }
+    ],
+    "skills": [
+      "UI Design",
+      "UX Research",
+      "Design Systems",
+      "Wireframing",
+      "Prototyping",
+      "User Testing",
+      "Accessibility",
+      "Design Thinking"
+    ]
+  },
+  "technicalSkills": {
+    "design": ["Figma", "Sketch", "Adobe XD", "Illustrator", "Photoshop", "InVision", "Principle", "Framer"],
+    "development": ["HTML/CSS", "JavaScript", "React", "Tailwind", "SCSS", "Git", "Responsive Design"],
+    "uxMethods": [
+      "User Research",
+      "Usability Testing",
+      "Wireframing",
+      "Prototyping",
+      "Information Architecture",
+      "User Flows"
+    ],
+    "softSkills": ["Team Leadership", "Project Management", "Client Communication", "Mentoring", "Presentations"]
+  }
+}
