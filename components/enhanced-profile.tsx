@@ -8,7 +8,7 @@ import { SocialLinks } from "@/components/social-links"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { User, MapPin, Mail, Phone, Languages, Clock, Briefcase } from "lucide-react"
 import { getPersonalInfo, getAboutInfo } from "@/lib/data"
-import avatar from "./../data/Img/avatar.png"
+import avatar from "./../data/Img/profile.jpg"
 
 export function EnhancedProfile() {
   const [activeTab, setActiveTab] = useState("about")

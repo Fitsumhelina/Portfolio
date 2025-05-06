@@ -11,7 +11,7 @@
     "avatar": "/data/Img/avatar.png",
     "email": "dev.fitsum@gmail.com",
     "phone": "+(251)904377900",
-    "workingHours": "Everyday till i die ",
+    "workingHours": "Mon - sat, 10am - 6am",
     "availableForWork": true,
     "badges": ["UI/UX","Graphics Design", "Full-stack  Development", "Database Design"],
     "social": [
@@ -31,7 +31,7 @@
         "icon": "Twitter"
       },
       {
-        "platform": "Instagram",
+        "platform": "Telegram",
         "url": "#",
         "icon": "Instagram"
       }

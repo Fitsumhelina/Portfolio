@@ -27,10 +27,10 @@ export function ContactSection() {
                   <div>
                     <h4 className="font-medium">Email</h4>
                     <a
-                      href="mailto:jane.doe@example.com"
+                      href="mailto:dev.fitsum@gmail.com"
                       className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors"
                     >
-                      jane.doe@example.com
+                      dev.fitsum@gmail.com
                     </a>
                   </div>
                 </div>
@@ -39,8 +39,8 @@ export function ContactSection() {
                   <Phone className="w-5 h-5 mr-3 text-cyan-400 mt-0.5" />
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <a href="tel:+14155552671" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
-                      +1 (415) 555-2671
+                    <a href="tel:+251904377900" className="text-sm text-zinc-400 hover:text-cyan-400 transition-colors">
+                      (+251) 904-3779-00
                     </a>
                   </div>
                 </div>
@@ -49,7 +49,7 @@ export function ContactSection() {
                   <MapPin className="w-5 h-5 mr-3 text-cyan-400 mt-0.5" />
                   <div>
                     <h4 className="font-medium">Location</h4>
-                    <p className="text-sm text-zinc-400">San Francisco, California</p>
+                    <p className="text-sm text-zinc-400">Addis Abeba, Ethiopia</p>
                   </div>
                 </div>
 
@@ -57,7 +57,7 @@ export function ContactSection() {
                   <Clock className="w-5 h-5 mr-3 text-cyan-400 mt-0.5" />
                   <div>
                     <h4 className="font-medium">Working Hours</h4>
-                    <p className="text-sm text-zinc-400">Monday - Friday, 9am - 5pm PST</p>
+                    <p className="text-sm text-zinc-400">Monday - Saturday, 10am - 6am Est</p>
                   </div>
                 </div>
               </div>
