@@ -38,36 +38,24 @@
     ]
   },
   "about": {
-    "bio": "I create user-centered digital experiences that solve real problems. Passionate about accessibility and ethical design with over 5 years of experience in product design and user experience research.",
+    "bio": "I create user-centered digital experiences that solve real problems. with over 2+ years of experience in Coding and user Software research.",
     "focus": [
-      "Creating intuitive and accessible digital products",
-      "Leading design teams and establishing design systems",
+      "Creating attractive and accessible digital products",
+      "Leading DevOps teams",
       "Conducting user research to inform product decisions"
     ],
     "languages": [
       {
+        "name": "Amharic",
+        "proficiency": "Fluent",
+        "level": 100,
+        "flag": "🇪🇹"
+      },
+      {
         "name": "English",
         "proficiency": "Native",
-        "level": 100,
+        "level": 90,
         "flag": "🇺🇸"
-      },
-      {
-        "name": "Spanish",
-        "proficiency": "Fluent",
-        "level": 80,
-        "flag": "🇪🇸"
-      },
-      {
-        "name": "French",
-        "proficiency": "Intermediate",
-        "level": 60,
-        "flag": "🇫🇷"
-      },
-      {
-        "name": "German",
-        "proficiency": "Basic",
-        "level": 30,
-        "flag": "🇩🇪"
       }
     ],
     "interests": ["Design Systems", "Accessibility", "Typography", "Motion Design", "Photography"]
@@ -96,16 +84,14 @@
   ],
   "experience": [
     {
-      "title": "Senior Product Designer",
-      "company": "TechCorp Inc.",
-      "period": "2021 - Present",
+      "title": "Back-end Developer and Business Partner",
+      "company": "Emare Hub Plc.",
+      "period": "2025 - Present",
       "description": "Lead the design of flagship products, managing a team of 3 designers. Implemented a design system that reduced design inconsistencies by 60% and improved development time by 40%. Conducted user research and usability testing to inform product decisions.",
       "achievements": [
-        "Redesigned the main dashboard, increasing user engagement by 35%",
-        "Led the design for 3 major feature launches, contributing to a 25% increase in user retention",
-        "Established design processes that improved team collaboration and product quality"
+        "Redesigned the main dashboard, increasing user engagement by 35%"
       ],
-      "technologies": ["Figma", "Adobe XD", "Prototyping", "User Research"]
+      "technologies": ["Laravel", "Figma","My Sql", "Prototyping", "User Research"]
     },
     {
       "title": "UX Designer",
