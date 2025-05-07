@@ -11,6 +11,7 @@ import { EnhancedProfile } from "@/components/enhanced-profile"
 import { CredentialsSection } from "@/components/credentials-section"
 import { PortfolioHeader } from "@/components/portfolio-header"
 import { getExperienceInfo, getTechnicalSkillsInfo } from "@/lib/data"
+import GitHubInfo from "@/components/githubinfo"
 
 const SkillTagComponent = ({ children }: { children: React.ReactNode }) => {
   return <div className="px-2 py-1 bg-zinc-800 rounded-full text-xs font-medium text-zinc-400">{children}</div>
@@ -40,6 +41,7 @@ export default function Home() {
           </div>
 
           <div className="col-span-1 md:col-span-2 lg:col-span-3 space-y-4 sm:space-y-6">
+            <GitHubInfo/>
             {/* Experience Section - Expanded */}
             <AnimatedSection animation="fade-up" id="experience">
               <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm">
