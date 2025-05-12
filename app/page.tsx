@@ -41,7 +41,7 @@ export default function Home() {
           </div>
 
           <div className="col-span-1 md:col-span-2 lg:col-span-3 space-y-4 sm:space-y-6">
-            <GitHubInfo/>
+            {/* <GitHubInfo/> */}
             {/* Experience Section - Expanded */}
             <AnimatedSection animation="fade-up" id="experience">
               <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm">
