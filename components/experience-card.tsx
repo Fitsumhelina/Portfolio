@@ -34,7 +34,7 @@ export function ExperienceCard({
             {company}
             </a>
         </div>
-        <div className="text-xs text-zinc-400 bg-zinc-800/70 px-2 py-1 sm:px-3 sm:py-1 rounded-full self-start mt-1 sm:mt-0 sm:self-auto">
+        <div className="text-xs text-cyan-400 bg-zinc-800/70 px-2 py-1 sm:px-3 sm:py-1 rounded-full self-start mt-1 sm:mt-0 sm:self-auto">
           {period}
         </div>
       </div>
