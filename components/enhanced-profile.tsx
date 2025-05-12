@@ -20,7 +20,7 @@ export function EnhancedProfile() {
     <Card className="bg-zinc-900/70 border-zinc-800 backdrop-blur-sm col-span-1 flex flex-col">
       <CardContent className="p-0">
         {/* Profile Header - Improved mobile layout */}
-        <div className="bg-gradient-to-r from-zinc-800/50 to-zinc-900/50 p-4 sm:p-6 flex flex-col items-center border-b border-zinc-800">
+        <div className="bg-gradient-to-r from-zinc-800/50 to-zinc-900/50 p-4 sm:p-4 flex flex-col items-center border-b border-zinc-800">
           <div className="flex flex-col sm:flex-col items-center w-full">
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden mb-4 border-2 border-cyan-400/20 ring-4 ring-zinc-800/50">
               <Image

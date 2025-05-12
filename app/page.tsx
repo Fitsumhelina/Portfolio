@@ -34,7 +34,7 @@ export default function Home() {
         {/* Main Content Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {/* Enhanced Profile Section */}
-          <div className="md:sticky md:top-24 self-start">
+          <div className="md:sticky md:top-24 self-start ">
             <AnimatedSection animation="slide-right">
               <EnhancedProfile />
             </AnimatedSection>

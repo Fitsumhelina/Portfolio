@@ -4,6 +4,7 @@ import { CheckCircle2 } from "lucide-react"
 interface ExperienceCardProps {
   title: string
   company: string
+  link: string
   period: string
   description: string
   achievements: string[]
@@ -13,6 +14,7 @@ interface ExperienceCardProps {
 export function ExperienceCard({
   title,
   company,
+  link,
   period,
   description,
   achievements,
@@ -23,7 +25,14 @@ export function ExperienceCard({
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-2">
         <div>
           <h4 className="font-medium text-base sm:text-lg">{title}</h4>
-          <div className="text-sm text-cyan-400">{company}</div>
+            <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-cyan-400 hover:underline hover:cursor-pointer"
+            >
+            {company}
+            </a>
         </div>
         <div className="text-xs text-zinc-400 bg-zinc-800/70 px-2 py-1 sm:px-3 sm:py-1 rounded-full self-start mt-1 sm:mt-0 sm:self-auto">
           {period}
