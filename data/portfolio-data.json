@@ -153,15 +153,15 @@
   "credentials": {
     "certifications": [
       {
-        "name": "Certified UX Professional",
-        "issuer": "Nielsen Norman Group",
-        "date": "2022",
+        "name": "Certified Full-stack Developer",
+        "issuer": "TechTonic Tribe",
+        "date": "2023",
         "logo": "/nng-logo.png"
       },
       {
-        "name": "Professional Product Designer",
-        "issuer": "Interaction Design Foundation",
-        "date": "2021",
+        "name": "Professional Virtual Assistant",
+        "issuer": "Alx-Africa",
+        "date": "2024",
         "logo": "/generic-military-logo.png"
       },
       {
@@ -173,15 +173,15 @@
     ],
     "education": [
       {
-        "degree": "Master of Fine Arts in Design",
-        "institution": "Rhode Island School of Design",
-        "year": "2015-2017",
+        "degree": "Bachelor of Software Engineering",
+        "institution": "Debre Berhan University",
+        "year": "sep 2022-Jan 2028(still studying)",
         "logo": "/generic-art-school-logo.png"
       },
       {
-        "degree": "Bachelor of Arts in Visual Communication",
-        "institution": "California Institute of the Arts",
-        "year": "2011-2015",
+        "degree": "Full-stack Development Bootcamp",
+        "institution": "TechTonic Tribe",
+        "year": "sept 2023-june 2023",
         "logo": "/calarts-logo.png"
       }
     ],
