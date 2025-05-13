@@ -171,7 +171,7 @@ export default function Home() {
           delay={500}
           className="mt-8 sm:mt-12 py-4 sm:py-6 text-center text-xs sm:text-sm text-zinc-500"
         >
-          <p>© {new Date().getFullYear()} Jane Doe. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Fitsum Helina.</p>
         </AnimatedSection>
       </div>
 
