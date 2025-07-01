@@ -52,7 +52,7 @@ const projects: Project[] = [
     ],
     technologies: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Vercel"],
     coverImage: "./../data/Img/Project/zulu/cover.png",
-    thumbnailImage: "../data/Img/Project/zulu/thumbnail.png",
+    thumbnailImage: "/../data/Img/Project/zulu/thumbnail.png",
     gallery: [
       { url: "../data/Img/Project/zulu/1.png", caption: "About page " },
       { url: "../data/Img/Project/zulu/2.png", caption: "Product page View" },
