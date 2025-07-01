@@ -1,5 +1,6 @@
 import * as LucideIcons from "lucide-react"
-
+// import * as ReactIcons from react-social-icons"
+  LucideIcons.icons
 interface SocialLink {
   platform: string
   url: string

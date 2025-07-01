@@ -111,7 +111,7 @@ export default function Home() {
                       <div className="space-y-3">
                         <h4 className="text-sm font-medium text-zinc-400">UX Methods</h4>
                         <div className="flex flex-wrap gap-2">
-                          {technicalSkills.uxMethods.map((skill, index) => (
+                          {technicalSkills.Tools.map((skill, index) => (
                             <SkillTagComponent key={index}>{skill}</SkillTagComponent>
                           ))}
                         </div>

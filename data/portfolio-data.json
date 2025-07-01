@@ -24,16 +24,6 @@
         "platform": "LinkedIn",
         "url": "https://www.linkedin.com/in/fitsumhelina/",
         "icon": "Linkedin"
-      },
-      {
-        "platform": "Twitter",
-        "url": "#",
-        "icon": "Twitter"
-      },
-      {
-        "platform": "Telegram",
-        "url": "#",
-        "icon": "Instagram"
       }
     ]
   },
@@ -84,6 +74,19 @@
   ],
  "experience": [
     {
+      "title": "Ux/Ui Designer and Tester ",
+      "company": "Emare Hub Plc.",
+      "link": "https://www.linkedin.com/company/emare-ict-hub/posts/?feedView=all",
+      "period": "Jun 2024 - Present",
+      "description": "Done UX/UI design for a Real world product, conducting user research and usability testing. Created design systems and prototypes to guide development.",
+      "achievements": [
+        "Designed and tested user interfaces for a new product.",
+        "Improved user satisfaction through iterative design and testing"
+      ],
+      "technologies": ["Figma", "User Research", "Prototyping", "Usability Testing"]
+
+    },
+    {
       "title": "Back-end Developer and Business Partner",
       "company": "Emare Hub Plc.",
       "link": "https://www.linkedin.com/company/emare-ict-hub/posts/?feedView=all",
@@ -93,7 +96,7 @@
         "Fully completed the product design and development process.",
         "Improved team workflows and backend efficiency"
       ],
-      "technologies": ["Laravel", "Figma", "MySQL", "Prototyping", "User Research"]
+      "technologies": ["Laravel", "Php", "MySQL", "Prototyping", "Restful API", "Git"]
     },
        {
       "title": "Frontend Developer",
@@ -101,8 +104,8 @@
       "link": "https://www.linkedin.com/company/zulu-software/posts/?feedView=all",
       "period": "January 2025 - March 2025",
       "description": "Worked on e-commerce platform interfaces, improving product listing and selling pages.",
-      "achievements": ["Redesigned product detail page for better UX", "Helped increase conversion rate by 10%"],
-      "technologies": ["React", "Tailwind CSS", "REST APIs"]
+      "achievements": ["Redesigned product detail page for better UX"],
+      "technologies": ["React", "Tailwind CSS"]
     },
     {
       "title": "Course Instructor",
@@ -120,7 +123,7 @@
       "period": "March 2024 - Present",
       "description": "Oversaw strategic operations and managed teams delivering technical and non-technical initiatives.",
       "achievements": ["Successfully led 3+ club-wide initiatives", "Implemented new project workflow process"],
-      "technologies": ["Google Workspace", "Notion", "Leadership"]
+      "technologies": ["Google Workspace", "Notion", "Leadership", "Team Management","Communication"]
     },
     {
       "title": "Back End Developer",
@@ -138,7 +141,7 @@
       "period": "March 2024 - Present",
       "description": "Developed websites for clients using modern tech stacks. Delivered full projects from ideation to deployment.",
       "achievements": ["Delivered 5+ websites for NGOs and small businesses", "Managed both front-end and back-end development"],
-      "technologies": ["Laravel", "React", "Tailwind CSS", "MySQL", "Hosting"]
+      "technologies": ["Laravel", "Node.js","React", "Tailwind CSS", "MySQL", "Hosting"]
     },
     {
       "title": "Social Media Manager",
@@ -156,19 +159,19 @@
         "name": "Certified Full-stack Developer",
         "issuer": "TechTonic Tribe",
         "date": "2023",
-        "logo": "/nng-logo.png"
+        "logo": "/./data/Img/credentials/techtonic.jpeg"
       },
       {
         "name": "Professional Virtual Assistant",
         "issuer": "Alx-Africa",
         "date": "2024",
-        "logo": "/generic-military-logo.png"
+        "logo": "/./data/Img/credentials/alxva.jpeg"
       },
       {
-        "name": "Design Leadership Certification",
-        "issuer": "IDEO",
-        "date": "2020",
-        "logo": "/ideo-logo.png"
+        "name": "Programming Fundamentals",
+        "issuer": "MiT",
+        "date": "2024",
+        "logo": "/./data/Img/credentials/udacity5m.png"
       }
     ],
     "education": [
@@ -176,13 +179,7 @@
         "degree": "Bachelor of Software Engineering",
         "institution": "Debre Berhan University",
         "year": "sep 2022-Jan 2028(still studying)",
-        "logo": "/generic-art-school-logo.png"
-      },
-      {
-        "degree": "Full-stack Development Bootcamp",
-        "institution": "TechTonic Tribe",
-        "year": "sept 2023-june 2023",
-        "logo": "/calarts-logo.png"
+        "logo": "/./data/Img/education/dbu.jpeg"
       }
     ],
     "skills": [
@@ -197,16 +194,9 @@
     ]
   },
   "technicalSkills": {
-    "design": ["Figma", "Sketch", "Adobe XD", "Illustrator", "Photoshop", "InVision", "Principle", "Framer"],
-    "development": ["HTML/CSS", "JavaScript", "React", "Tailwind", "SCSS", "Git", "Responsive Design"],
-    "uxMethods": [
-      "User Research",
-      "Usability Testing",
-      "Wireframing",
-      "Prototyping",
-      "Information Architecture",
-      "User Flows"
-    ],
+    "design": ["Figma", "Sketch", "Photoshop", "Principle", "Framer"],
+    "development": ["HTML/CSS", "Typescript", "React", "Tailwind", "SCSS", "Git", "Responsive Design","Node.js", "Express", "MySQL", "Prisma", "Laravel"],
+    "Tools": ["GitHub", "GitLab", "Postman", "Jira", "Slack", "Notion", "Google Workspace"],
     "softSkills": ["Team Leadership", "Project Management", "Client Communication", "Mentoring", "Presentations"]
   }
 }
