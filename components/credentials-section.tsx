@@ -1,7 +1,6 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { GraduationCap, Award } from "lucide-react"
-import { SkillTag } from "@/components/skill-tag"
 import { AnimatedSection } from "@/components/animated-section"
 import { getCredentialsInfo } from "@/lib/data"
 
@@ -30,7 +29,7 @@ export function CredentialsSection() {
                     {cert.logo && (
                       <div className="relative w-10 h-10 rounded overflow-hidden mr-3 flex-shrink-0 bg-zinc-800">
                         <Image
-                          src={cert.logo || "/placeholder.svg"}
+                          src={cert.logo}
                           alt={cert.issuer}
                           fill
                           className="object-contain p-1"
@@ -62,9 +61,10 @@ export function CredentialsSection() {
                     {edu.logo && (
                       <div className="relative w-10 h-10 rounded overflow-hidden mr-3 flex-shrink-0 bg-zinc-800">
                         <Image
-                          src={edu.logo || "/placeholder.svg"}
+                          src={edu.logo}
                           alt={edu.institution}
-                          fill
+                           width={40}
+                           height={40}
                           className="object-contain p-1"
                         />
                       </div>
@@ -81,20 +81,6 @@ export function CredentialsSection() {
             </div>
           </AnimatedSection>
 
-          {/* Skills & Expertise */}
-          <AnimatedSection animation="fade-up" delay={300}>
-            <div className="space-y-3">
-              <h4 className="text-sm font-medium text-zinc-400 flex items-center border-b border-zinc-800 pb-2">
-                <Award className="w-4 h-4 mr-2 text-cyan-400" />
-                Skills & Expertise
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {credentialsInfo.skills.map((skill, index) => (
-                  <SkillTag key={index}>{skill}</SkillTag>
-                ))}
-              </div>
-            </div>
-          </AnimatedSection>
         </div>
       </CardContent>
     </Card>

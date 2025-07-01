@@ -179,18 +179,8 @@
         "degree": "Bachelor of Software Engineering",
         "institution": "Debre Berhan University",
         "year": "sep 2022-Jan 2028(still studying)",
-        "logo": "/./data/Img/education/dbu.jpeg"
+        "logo": "/data/Img/education/dbu.jpeg"
       }
-    ],
-    "skills": [
-      "UI Design",
-      "UX Research",
-      "Design Systems",
-      "Wireframing",
-      "Prototyping",
-      "User Testing",
-      "Accessibility",
-      "Design Thinking"
     ]
   },
   "technicalSkills": {
